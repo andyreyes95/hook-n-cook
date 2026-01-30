@@ -1,6 +1,6 @@
 {
   "name": "hook-n-cook",
-  "homepage": "https://andyreyes95.github.io/hook-n-cook/"
+  "homepage": "https://andyreyes95.github.io/hook-n-cook/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "gh-pages": "^6.2.0",
