@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { useState, useEffect, useCallback, useRef } from 'react'
 import './Play.css'
 
 const GAME_WIDTH = 400
