@@ -1,0 +1,262 @@
+.locations-hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+  padding: 100px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.locations-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.locations-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Location Filter */
+.location-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.location-filter > span {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: 2px solid var(--primary-dark);
+  background: var(--white);
+  color: var(--primary-dark);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+
+/* Locations Grid */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.locations-grid.single-location {
+  grid-template-columns: 1fr;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.location-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+.location-card.original {
+  border: 2px solid var(--primary-light);
+}
+
+.original-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-light);
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.location-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.location-card h3 {
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.location-details {
+  margin-bottom: 25px;
+}
+
+.location-details p {
+  color: var(--gray);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.location-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.location-actions .btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+/* Expansion Section */
+.expansion-section {
+  background: var(--primary-dark);
+  color: var(--white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.expansion-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.expansion-section > .container > p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+.expansion-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Franchise Section */
+.franchise-section {
+  background: var(--off-white);
+}
+
+.franchise-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: var(--white);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.franchise-text h2 {
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+}
+
+.franchise-text p {
+  color: var(--gray);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.franchise-text ul {
+  list-style: none;
+}
+
+.franchise-text li {
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.franchise-cta {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.franchise-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .franchise-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .franchise-text ul {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .locations-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expansion-stats {
+    gap: 30px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
