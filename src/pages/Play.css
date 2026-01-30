@@ -146,6 +146,10 @@
 }
 
 .hook-top .hook-icon {
+  transform: scaleX(-1);
+}
+
+.hook-bottom .hook-icon {
   transform: rotate(180deg);
 }
 

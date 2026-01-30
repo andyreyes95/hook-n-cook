@@ -6,10 +6,10 @@ const GAME_HEIGHT = 500
 const FISH_SIZE = 30
 const HOOK_WIDTH = 50
 const HOOK_GAP = 150
-const GRAVITY = 0.5
+const GRAVITY = 0.4
 const JUMP_STRENGTH = -6
 const HOOK_SPEED = 3
-const HOOK_COLLISION_PADDING = 12 // Makes hitbox smaller
+const HOOK_COLLISION_PADDING = 10 // Makes hitbox smaller
 
 function Play() {
   const [gameState, setGameState] = useState('start') // start, playing, gameOver
